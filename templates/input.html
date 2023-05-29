@@ -1,21 +1,13 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-    <div id="text2">Enter the headlines/NEWS article link</div>
-    <div class="tab1">
-        <div class="tab11">
-            <textarea id="rect"></textarea>
-            <button class="rect3" id="check" onclick="displayResults()">Check</button>
-        </div>
-    </div>
-    <div class="tab1">
-        <div class="tab11">
-            <div id="options">
-                <img class="fake" src="../static/Images/fake.png" alt="">
-                <div class="insidetext3">The entered NEWS is fake</div>
-            </div>
-        </div>
+    <div class="center">
+        <h1>Enter the headlines/NEWS article link</h1>
+        <form action="" id="input">
+            <textarea required></textarea>
+            <br>
+            <button class="btn2" id="check" type="submit">Check</button>
+        </form>
     </div>
 
 {% endblock body %}

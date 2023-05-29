@@ -10,6 +10,10 @@ def Home():
 def Input():
     return render_template("input.html")
 
+@app.route('/result')
+def Result():
+    return render_template("result.html")
+
 
 if __name__=='__main__':
     app.run(debug=True)
