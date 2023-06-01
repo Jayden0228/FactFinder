@@ -119,6 +119,8 @@ h2 {
 }
 
 textarea {
+  font-family: "Inter";
+  font-style: normal;
   resize: none;
   width: 65%;
   height: 100%;
