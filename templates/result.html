@@ -4,13 +4,12 @@
     
 <div id="msg" class="center">
     <div id="result" class="center">
-        <form action="\input"  id="close">
-            <button type="submit" class="btn3">&#10005;</button>
-        </form>
-        <!-- <img src="../static/Images/fake.png" alt="" style="width:30%; height:50%"> -->
-        <img src="../static/Images/real.png" alt="" style="width:30%; height:50%">
-        <!-- <h2  class="color-blue" style="margin: 0;">The entered news is <span style="color:red">FAKE</span>!!!</h2> -->
-        <h2  class="color-blue" style="margin: 0;">The entered news is <span style="color:green">REAL</span>!!!</h2>
+        <a href="\"  id="close">
+            <!-- <input type="hidden" name="btntype" value="headline"> -->
+            <button type="button" class="btn3">&#10005;</button>
+        </a>
+        <img src="{{src}}" alt="" style="width:30%; height:50%">
+        <h2  class="color-blue" style="margin: 0;">The entered news is {{res}}!!!</h2>
     </div>
 </div>
 
