@@ -7,24 +7,40 @@
     
     <div id="buttons">
         
-        <a href="/input">
+        <!-- <a href="/input">
             <button id="btn" type="button" class="btn1 bg-color-blue">
                 <img class="pin" src="../static/Images/pin.png" alt="">
                 <img src="../static/Images/headline.png" alt="" style="width:30%; height:80%">
                 <h2>Enter the NEWS headlines</h2>
             </button>
-        </a>
-        <!-- <form action="/input">
-            <input type="hidden" name="">
-        </form> -->
+        </a> -->
 
-        <a href="/input">
+        <form action="/input" method="POST">
+            <input type="hidden" name="btntype" value="headline">
+            <button id="btn" type="submit" class="btn1 bg-color-blue">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/headline.png" alt="" style="width:30%; height:80%">
+                <h2>Enter the NEWS Headline</h2>
+            </button>
+        </form>
+
+
+        <form action="/input" method="POST">
+            <input type="hidden" name="btntype" value="article">
+            <button id="btn" type="submit" class="btn1 bg-color-white">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/news-report.png" alt="" style="width:30%; height:80%">
+                <h2 class="color-blue">Enter the NEWS Article link</h2>
+            </button>
+        </form>
+
+        <!-- <a href="/input">
             <button id="btn" type="button" class="btn1 bg-color-white">
                 <img class="pin" src="../static/Images/pin.png" alt="">
                 <img src="../static/Images/news-report.png" alt="" style="width:30%; height:80%">
                 <h2 class="color-blue">Enter the NEWS Article link</h2>
             </button>
-        </a>
+        </a> -->
         
     </div>
     

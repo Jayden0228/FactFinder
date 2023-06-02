@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -6,9 +6,18 @@ app = Flask(__name__)
 def Home():
     return render_template("index.html")
 
-@app.route('/input')
+@app.route('/input', methods=['POST'])
 def Input():
-    return render_template("input.html")
+    if request.method == 'POST':
+        btn=request.form['btntype']
+
+        if btn=='headline':
+            return render_template("input.html", header='News Headline')
+        elif btn=='article':
+            return render_template("input.html", header='News Article Link')
+            
+
+    # return render_template("input.html")
 
 @app.route('/result')
 def Result():

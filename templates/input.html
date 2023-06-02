@@ -2,9 +2,10 @@
 
 {% block body %}
     <div class="center">
-        <h1>Enter the News Article Link</h1>
+        <h1>Enter the {{ header }}</h1>
+        <!-- <h1>Enter the News Article Link</h1> -->
         <!-- <h1>Enter the News Headline</h1> -->
-        <form action="" id="input">
+        <form action="/result" id="input">
             <textarea required></textarea>
             <br>
             <button class="btn2" id="check" type="submit">Check</button>
