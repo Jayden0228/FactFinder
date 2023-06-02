@@ -28,4 +28,4 @@ def getHeadline(url):
     headlines = soup.find('body').find(tag)
     return headlines.text.strip()
 
-print(getHeadline('https://www.heraldgoa.in/News-Today/Gang-of-robbers-attempt-three-robberies-shoot-at-Police/205312'))
+# print(getHeadline('https://www.heraldgoa.in/News-Today/Gang-of-robbers-attempt-three-robberies-shoot-at-Police/205312'))

@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+from app.ML import ml
+from app.Scrapping import Scrape
 
 app = Flask(__name__)
 
