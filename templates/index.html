@@ -1,59 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+{% extends 'base.html' %}
+{% block body %}
     
-    <title>Document</title>
-</head>
-<body onload="displayTable()">
-    <script src="index.js"></script>
-    <div class="rect1">
-        <div class="logo1"></div>
-    </div>
-    <div id="text">Select an option to find the TRUTH</div>
+<div class="center">
     
-    <div class="flex-container" id="table" >
-    <form >
-    <div class="tab1">
-        <div class="tab11">
-            <button type="button" class="rectangle8" onclick="displayform()">
-                <img class="pin2"src="pin.png" alt="">
-                <img src="headline.png" alt="">
-                <!-- <textarea  name="headline" id="headline" cols="30" rows="10">Enter the NEWS headlines</textarea> -->
-                <div class="insidetext">Enter the NEWS headlines</div>
+    <h1>Select an option to find the TRUTH</h1>
+    
+    <div id="buttons">
+        
+        <!-- <a href="/input">
+            <button id="btn" type="button" class="btn1 bg-color-blue">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/headline.png" alt="" style="width:30%; height:80%">
+                <h2>Enter the NEWS headlines</h2>
             </button>
-            
-        </div>
-    </div>
-    <div class="tab1">
-        <div class="tab11">
-            <button type="button" class="rectangle9" onclick="displayform()">
-                <img class="pin3"src="pin.png" alt="">
-                <img src="news-report.png" alt="">
-                <div class="insidetext2">Enter the NEWS Article link</Article></div>
+        </a> -->
+
+        <form action="/input" method="POST">
+            <input type="hidden" name="btntype" value="headline">
+            <button id="btn" type="submit" class="btn1 bg-color-blue">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/headline.png" alt="" style="width:30%; height:80%">
+                <h2>Enter the NEWS Headline</h2>
             </button>
-            
-        </div>
+        </form>
+
+
+        <form action="/input" method="POST">
+            <input type="hidden" name="btntype" value="article">
+            <button id="btn" type="submit" class="btn1 bg-color-white">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/news-report.png" alt="" style="width:30%; height:80%">
+                <h2 class="color-blue">Enter the NEWS Article link</h2>
+            </button>
+        </form>
+
+        <!-- <a href="/input">
+            <button id="btn" type="button" class="btn1 bg-color-white">
+                <img class="pin" src="../static/Images/pin.png" alt="">
+                <img src="../static/Images/news-report.png" alt="" style="width:30%; height:80%">
+                <h2 class="color-blue">Enter the NEWS Article link</h2>
+            </button>
+        </a> -->
+        
     </div>
-</form>
-    </div>
-    <div id="text2">Enter the headlines/NEWS article link</div>
-    <div class="tab1">
-        <div class="tab11">
-  <textarea  id="rect"></textarea>
-  <button class="rect3" id="check" onclick="displayResults()">Check</button>
+    
 </div>
-</div>
-<div class="tab1">
-    <div class="tab11">
-<div id="options">
-    <img class="fake" src="fake.png" alt="">
-    <div class="insidetext3">The entered NEWS is fake</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+
+
+
+{% endblock body %} 

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="center">
+        <h1>Enter the {{ header }}</h1>
+        <!-- <h1>Enter the News Article Link</h1> -->
+        <!-- <h1>Enter the News Headline</h1> -->
+        <form action="/result" id="input" method="POST">
+            <input type="hidden" name="texttype" value="{{ value }}">
+            <textarea name="textbox" required></textarea>
+            <br>
+            <button class="btn2" id="check" type="submit">Check</button>
+        </form>
+    </div>
+
+{% endblock body %}

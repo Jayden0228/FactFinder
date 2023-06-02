@@ -2,4 +2,6 @@
 *.xls
 *.xlsx
 
-app/ML/.ipynb_checkpoints/
+ML/.ipynb_checkpoints/
+ML/ML_streamlit.py
+__pycache__
