@@ -11,6 +11,7 @@ channelTag={
     'indiatoday': 'h1',
     'cnn': 'h1',
     'bbc': 'h1',
+    'snopes': 'h1'
 }
 
 def getTag(s):
