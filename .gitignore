@@ -1,21 +1,7 @@
 News.csv
-mL/New_data.xlsx
-mL/News.csv
 
 
 ML/.ipynb_checkpoints/
 ML/ML_streamlit.py
 __pycache__
 
-
-mL/Shuffle.ipynb
-scrapping/.ipynb_checkpoints/
-scrapping/ALL news headline extractor.ipynb
-scrapping/Fetching data from site.ipynb
-scrapping/Untitled.ipynb
-scrapping/append.py
-scrapping/channel.py
-scrapping/new.py
-
-mL/Append to data set.ipynb
-mL/Model_Training.ipynb
