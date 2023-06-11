@@ -1,6 +1,7 @@
-*.csv
-*.xls
-*.xlsx
+News.csv
+mL/New_data.xlsx
+mL/News.csv
+
 
 ML/.ipynb_checkpoints/
 ML/ML_streamlit.py
